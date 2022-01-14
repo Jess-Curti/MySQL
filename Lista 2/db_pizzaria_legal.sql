@@ -48,7 +48,7 @@ WHERE sabor_pizza LIKE "%C%";
 
 -- Selecionar tudo da tabela pizza, jutar a tabela categoria com o id da tabela categoria = fk da tabela pizza 
 SELECT * FROM tb_pizza
-	INNER JOIN tb_categorias ON tb_categorias.id = tb_pizza.fk_categoria
+	INNER JOIN tb_categorias ON tb_categorias.id = tb_pizza.fk_categoria;
     
 SELECT tb_pizza.sabor_pizza, tb_pizza.formato_pizza, tamanho_pizza, categoria_pizza, preco
 FROM tb_pizza
